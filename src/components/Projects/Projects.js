@@ -29,6 +29,46 @@ const Projects = () => {
                     <div class="div6">First slide label</div>
                 </div>
                 </Carousel.Item>
+                <Carousel.Item>
+                <div class="parenta">
+                    <div class="div1a">First slide label</div>
+                    <div class="div2a">First slide label</div>
+                    <div class="div3a">First slide label</div>
+                    <div class="div4a">First slide label</div>
+                    <div class="div5a">First slide label</div>
+                    <div class="div6a">First slide label</div>
+                </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                <div class="parentb">
+                    <div class="div1b">First slide label</div>
+                    <div class="div2b">First slide label</div>
+                    <div class="div3b">First slide label</div>
+                    <div class="div4b">First slide label</div>
+                    <div class="div5b">First slide label</div>
+                    <div class="div6b">First slide label</div>
+                </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                <div class="parentc">
+                    <div class="div1c">First slide label</div>
+                    <div class="div2c">First slide label</div>
+                    <div class="div3c">First slide label</div>
+                    <div class="div4c">First slide label</div>
+                    <div class="div5c">First slide label</div>
+                    <div class="div6c">First slide label</div>
+                </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                <div class="parentd">
+                    <div class="div1d">First slide label</div>
+                    <div class="div2d">First slide label</div>
+                    <div class="div3d">First slide label</div>
+                    <div class="div4d">First slide label</div>
+                    <div class="div5d">First slide label</div>
+                    <div class="div6d">First slide label</div>
+                </div>
+                </Carousel.Item>
             </Carousel>
         </div>
     );
