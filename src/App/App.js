@@ -8,6 +8,12 @@ import './App.scss';
 const App = () => {
   return (
     <div className="App">
+      <nav>
+          <a href="Hello">Hello</a>
+          <a href="Portfolio">Portfolio</a>
+          <a href="Services">Services</a>
+          <a href="Contact">Contact</a>
+      </nav>
        <Presentation />
        <Projects />
        <SkillSet />

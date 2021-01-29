@@ -1,3 +1,60 @@
 .Projects {
-    background-color: blueviolet;
+    background-color: rgb(27,27,30);
+    height: 164vh;
+    .header {
+        display: flex;
+        padding-left: 12%;
+        .greeting-projects {
+            align-self: flex-end;
+            margin-bottom: 3.7%;
+        }
+    }
+    #h1-project {
+        padding-left: 20.5%;
+        position: relative;
+        top: -4%;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(12, 49%);
+        grid-column-gap: 0.5%;
+        grid-row-gap: 8%;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 4 / 4;
+        background-image: url("/assets/facebook-clone/FacebookClone3.jpg");
+        background-size: cover;
+    }
+    .div2 {
+        grid-area: 4 / 1 / 7 / 4;
+        background-image: url("/assets/facebook-clone/chat.png");
+        background-size: cover;
+    }
+    .div3 {
+        
+        background-image: url("/assets/facebook-clone/login_page.png");
+            grid-area: 1 / 4 / 7 / 9;
+            background-size: cover;
+        }
+    .div4 {
+        background-image: url("/assets/facebook-clone/FacebookClone2.jpg");
+            grid-area: 7 / 6 / 10 / 9;
+            background-size: cover;
+        }
+    .div5 {
+        background-image: url("/assets/facebook-clone/home_page.png");
+        
+            grid-area: 10 / 6 / 13 / 9;
+            background-size: cover;
+        }
+    .div6 {
+        background-image: url("/assets/facebook-clone/FacebookClone.jpg");
+            grid-area: 7 / 1 / 13 / 6;
+            background-size: cover;
+        }
+    .carousel-item {
+        height: 100vh;
+    }
 }

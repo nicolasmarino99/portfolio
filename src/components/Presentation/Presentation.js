@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './Presentation.scss'
-import { faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faAngellist, faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Presentation = () => {
     return (
@@ -28,14 +28,9 @@ const Presentation = () => {
                     <FontAwesomeIcon className="icon" icon={faTwitter} />
                     <FontAwesomeIcon className="icon" icon={faLinkedin} />
                     <FontAwesomeIcon className="icon" icon={faMedium} />
+                    <FontAwesomeIcon className="icon" icon={faAngellist} />
                 </div>
             </div>
-            <nav>
-                <a href="Hello">Hello</a>
-                <a href="Portfolio">Portfolio</a>
-                <a href="Services">Services</a>
-                <a href="Contact">Contact</a>
-            </nav>
         </div>
     );
 };
