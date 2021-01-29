@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './Projects.scss'
 
 const Projects = () => {
     return (
-        <div>
+        <div className="Projects">
             asdfdsf
         </div>
     );

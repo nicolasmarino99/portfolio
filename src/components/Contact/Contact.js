@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Contact.scss'
 
 const Contact = () => {
     return (
-        <div>
+        <div className="Contact" id="Contact">
             asdas
         </div>
     );

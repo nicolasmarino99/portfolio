@@ -8,7 +8,6 @@ import './App.scss';
 const App = () => {
   return (
     <div className="App">
-      <div>asdfsdf</div>
        <Presentation />
        <Projects />
        <SkillSet />

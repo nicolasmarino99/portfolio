@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+.Presentation {
+    background-color: rgb(27,27,30);
+    height: 100vh;
+    .greeting {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+        padding-left: 4%;
+        #n1 {
+            left: -17%;
+            top: 0.6em;
+            position: relative;
+        }
+        .greeting-p {
+            padding-right: 20%;
+            margin: 0;
+        }
+        #name {
+            font-size: 5em;
+            line-height: 1;
+            margin: 0;
+            margin-bottom: 0.3em;
+            width: 25%;
+            font-weight: 100;
+        }
+        .special-p {
+            font-family: 'Roboto', sans-serif;
+            color: #DB4747;
+            font-weight: bold;
+        }
+        .presentaion-p {
+            width: 30%;
+            margin: auto;
+            padding-left: 5.5%;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 27%;
+            height: 7%;
+        }
+        line {
+            stroke: white;
+            stroke-width: 1;
+        }
+        .icon {
+            font-size: 18px;
+        }
+        .circle-svg {
+            position: absolute;
+            right: 27%;
+            top: 28%;
+        }
+    }
+}
