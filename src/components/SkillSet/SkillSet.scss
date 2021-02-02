@@ -1,38 +1,56 @@
 .SkillSet {
     background-color: rgb(27,27,30);
     display: flex;
-    height: 89vh;
+    height: 100vh;
+    padding: 4%;
     .skills {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding-left: 10%;
         .SkillCard {
-            box-shadow: 0px 2px 24px 0px #000000 25%;
+            -webkit-box-shadow: 0px 0px 13px 0px #00000098;
+            box-shadow: 0px 0px 13px 0px #00000098;
             background: #212123;
-            width: 35%;
+            width: 44%;
             height: 47%;
+            margin: 3%;
             li {
                 color: #7D7C84;
+                font-size: 13px;
             }
             h2 {
                 color: white;
                 font-weight: bold;
                 font-size: 18px;
+                padding-left: 1em;
+            }
+            img {
+                padding: 1em;
             }
         }
-        .info-cv {
-            width: 47%;
-            .presentaion-p {
-                width: 69%;
-            }
-            .social {
-                display: flex;
-                font-family: 'Roboto', sans-serif;
-                color: #DB4747;
+
+    }
+    .info-cv {
+        width: 47%;
+        margin-left: 3%;
+        padding: 2% 0;
+        #n3 {
+            height: 23%;
+        }
+        h1 {
+            margin-bottom: 4%;
+        }
+        .presentaion-p {
+            width: 66%;
+        }
+        .social {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            color: #DB4747;
+            .special-p {
+                margin-right: 1em;
                 font-weight: bold;
-                .special-p {
-                    margin-right: 1em;
-                }
             }
         }
     }
