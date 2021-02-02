@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Projects.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-bootstrap';
-import { render } from '@testing-library/react';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
     const [index, setIndex] = useState(0);
@@ -20,53 +21,128 @@ const Projects = () => {
             <h1 id="h1-project">Portfolio</h1>
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
-                <div class="parent">
-                    <div class="div1">First slide label</div>
-                    <div class="div2">First slide label</div>
-                    <div class="div3">First slide label</div>
-                    <div class="div4">First slide label</div>
-                    <div class="div5">First slide label</div>
-                    <div class="div6">First slide label</div>
+                <div className="parent">
+                    
+                    <div className="div1"></div>
+                    <div className="div2"></div>
+                    <div className="div3">
+                    <header>
+                        <p className="p-h1">Facebook Clone</p>
+                        <div>
+                            <div className="tag">HTML 5 (erb)</div>
+                            <div className="tag">CSS 3 (scss)</div>
+                            <div className="tag">Ruby 2.6.3</div>
+                            <div className="tag">Rails 6.0.1</div>
+                            <div className="tag">JavaScript</div>
+                            <div className="tag">Rspec</div>
+                            <div className="tag">Capybara</div>
+                        </div>
+                        <button>See this Project <FontAwesomeIcon className="icon" icon={faArrowRight}/></button>
+                    </header>
+                    </div>
+                    <div className="div4"></div>
+                    <div className="div5"></div>
+                    <div className="div6"></div>
                 </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                <div class="parenta">
-                    <div class="div1a">First slide label</div>
-                    <div class="div2a">First slide label</div>
-                    <div class="div3a">First slide label</div>
-                    <div class="div4a">First slide label</div>
-                    <div class="div5a">First slide label</div>
-                    <div class="div6a">First slide label</div>
+                <div className="parenta">
+                
+                    <div className="div1a"></div>
+                    <div className="div2a"></div>
+                    <div className="div3a">
+                        <header>
+                            <p className="p-h1">Facebook Clone</p>
+                            <div>
+                                <div className="tag">HTML 5 (erb)</div>
+                                <div className="tag">CSS 3 (scss)</div>
+                                <div className="tag">Ruby 2.6.3</div>
+                                <div className="tag">Rails 6.0.1</div>
+                                <div className="tag">JavaScript</div>
+                                <div className="tag">Rspec</div>
+                                <div className="tag">Capybara</div>
+                            </div>
+                            <button>See this Project <FontAwesomeIcon className="icon" icon={faArrowRight}/></button>
+                        </header>
+                    </div>
+                    <div className="div4a"></div>
+                    <div className="div5a"></div>
+                    <div className="div6a"></div>
                 </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                <div class="parentb">
-                    <div class="div1b">First slide label</div>
-                    <div class="div2b">First slide label</div>
-                    <div class="div3b">First slide label</div>
-                    <div class="div4b">First slide label</div>
-                    <div class="div5b">First slide label</div>
-                    <div class="div6b">First slide label</div>
+                <div className="parentb">
+                   
+                    <div className="div1b"></div>
+                    <div className="div2b"></div>
+                    <div className="div3b">
+                    <header>
+                        <p className="p-h1">Facebook Clone</p>
+                        <div>
+                            <div className="tag">HTML 5 (erb)</div>
+                            <div className="tag">CSS 3 (scss)</div>
+                            <div className="tag">Ruby 2.6.3</div>
+                            <div className="tag">Rails 6.0.1</div>
+                            <div className="tag">JavaScript</div>
+                            <div className="tag">Rspec</div>
+                            <div className="tag">Capybara</div>
+                        </div>
+                        <button>See this Project <FontAwesomeIcon className="icon" icon={faArrowRight}/></button>
+                    </header>
+                    </div>
+                    <div className="div4b"></div>
+                    <div className="div5b"></div>
+                    <div className="div6b"></div>
                 </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                <div class="parentc">
-                    <div class="div1c">First slide label</div>
-                    <div class="div2c">First slide label</div>
-                    <div class="div3c">First slide label</div>
-                    <div class="div4c">First slide label</div>
-                    <div class="div5c">First slide label</div>
-                    <div class="div6c">First slide label</div>
+                <div className="parentc">
+                    
+                    <div className="div1c"></div>
+                    <div className="div2c"></div>
+                    <div className="div3c">
+                    <header>
+                        <p className="p-h1">Facebook Clone</p>
+                        <div>
+                            <div className="tag">HTML 5 (erb)</div>
+                            <div className="tag">CSS 3 (scss)</div>
+                            <div className="tag">Ruby 2.6.3</div>
+                            <div className="tag">Rails 6.0.1</div>
+                            <div className="tag">JavaScript</div>
+                            <div className="tag">Rspec</div>
+                            <div className="tag">Capybara</div>
+                        </div>
+                        <button>See this Project <FontAwesomeIcon className="icon" icon={faArrowRight}/></button>
+                    </header>
+                    </div>
+                    <div className="div4c"></div>
+                    <div className="div5c"></div>
+                    <div className="div6c"></div>
                 </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                <div class="parentd">
-                    <div class="div1d">First slide label</div>
-                    <div class="div2d">First slide label</div>
-                    <div class="div3d">First slide label</div>
-                    <div class="div4d">First slide label</div>
-                    <div class="div5d">First slide label</div>
-                    <div class="div6d">First slide label</div>
+                <div className="parentd">
+                    
+                    <div className="div1d"></div>
+                    <div className="div2d"></div>
+                    <div className="div3d">
+                    <header>
+                        <p className="p-h1">Facebook Clone</p>
+                        <div>
+                            <div className="tag">HTML 5 (erb)</div>
+                            <div className="tag">CSS 3 (scss)</div>
+                            <div className="tag">Ruby 2.6.3</div>
+                            <div className="tag">Rails 6.0.1</div>
+                            <div className="tag">JavaScript</div>
+                            <div className="tag">Rspec</div>
+                            <div className="tag">Capybara</div>
+                        </div>
+                        <button>See this Project <FontAwesomeIcon className="icon" icon={faArrowRight}/></button>
+                    </header>
+                    </div>
+                    <div className="div4d"></div>
+                    <div className="div5d"></div>
+                    <div className="div6d"></div>
                 </div>
                 </Carousel.Item>
             </Carousel>

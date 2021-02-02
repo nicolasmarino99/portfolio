@@ -20,6 +20,9 @@
         grid-template-rows: repeat(12, 58%);
         grid-column-gap: 0.5%;
         grid-row-gap: 8%;
+        div {
+            filter: opacity(0.5);
+        }
     }
 
     .div1 {
@@ -58,6 +61,9 @@
             grid-template-rows: repeat(12, 58%);
             grid-column-gap: 0.5%;
             grid-row-gap: 8%;
+            div {
+                filter: opacity(0.5);
+            }
         }
     
         .div1a {
@@ -96,13 +102,16 @@
                 grid-template-rows: repeat(12, 58%);
                 grid-column-gap: 0.5%;
                 grid-row-gap: 8%;
+                div {
+                    filter: opacity(0.5);
+                }
             }
         
             .div1b {
                 grid-area: 1 / 1 / 4 / 4;
                 background-image: url("/assets/trello-clone/SuperToDo1.jpg");
                 background-size: cover;
-            }SuperToDo
+            }
             .div2b {
                 grid-area: 4 / 1 / 7 / 4;
                 background-image: url("/assets/trello-clone/SuperToDo2.jpg");
@@ -134,6 +143,9 @@
                     grid-template-rows: repeat(12, 58%);
                     grid-column-gap: 0.5%;
                     grid-row-gap: 8%;
+                    div {
+                        filter: opacity(0.5);
+                    }
                 }
             
                 .div1c {
@@ -172,6 +184,9 @@
                         grid-template-rows: repeat(12, 58%);
                         grid-column-gap: 0.5%;
                         grid-row-gap: 8%;
+                        div {
+                            filter: opacity(0.5);
+                        }
                     }
                     .div1d {
                         grid-area: 1 / 1 / 4 / 4;
