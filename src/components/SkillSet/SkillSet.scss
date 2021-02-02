@@ -1,4 +1,39 @@
 .SkillSet {
     background-color: rgb(27,27,30);
     display: flex;
+    height: 89vh;
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .SkillCard {
+            box-shadow: 0px 2px 24px 0px #000000 25%;
+            background: #212123;
+            width: 35%;
+            height: 47%;
+            li {
+                color: #7D7C84;
+            }
+            h2 {
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+        .info-cv {
+            width: 47%;
+            .presentaion-p {
+                width: 69%;
+            }
+            .social {
+                display: flex;
+                font-family: 'Roboto', sans-serif;
+                color: #DB4747;
+                font-weight: bold;
+                .special-p {
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
 }

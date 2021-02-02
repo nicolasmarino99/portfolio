@@ -1,3 +1,19 @@
 .Contact {
-    background-color: red;
+    background: #212123;
+    height: 95vh;
+
+    .contact-container {
+        margin: auto;
+        width: 33%;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .social {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
 }

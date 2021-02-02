@@ -10,7 +10,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 const SkillSet = () => {
   const [skills, setSkills] = useState([
     ['Languages', languagesLogo, ['JavaScript (ES5/ES6)','Ruby','HTML','CSS3/SASS', 'Python']],
-    ['Frameworks', frameworksLogo, ['React', 'Ruby on Rails','Boostrap', 'Material', 'Jest', 'React-testing-lib.', 'Redux', 'Capibara', 'Rspec', 'webpack', 'Phaser3', 'rubocop', 'eslint']],
+    ['Frameworks', frameworksLogo, ['React', 'Ruby on Rails', 'Material', 'Jest', 'React-testing-lib.', 'Redux', 'Capibara', 'Rspec', 'Phaser3']],
     ['Skills', skillsLogo, ['Pair Programing', 'TDD', 'git', 'github', 'Heroku', ' Netlify', 'gitlab']],
     ['Soft skills', softskillsLogo, ['Communication', 'Problem-solving', 'Patience', 'Adaptability']],
   ])
