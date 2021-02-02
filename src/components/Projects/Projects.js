@@ -22,7 +22,7 @@ const Projects = () => {
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                 <div className="parent">
-                    
+                                      
                     <div className="div1"></div>
                     <div className="div2"></div>
                     <div className="div3">
