@@ -1,18 +1,48 @@
 .Contact {
     background: #212123;
-    height: 95vh;
+    height: 112vh;
 
     .contact-container {
         margin: auto;
-        width: 33%;
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .social {
+        width: 50%;
+        .title {
             display: flex;
             justify-content: space-between;
+            margin-top: 9%;
+            svg {
+                margin-top: 5%;
+            }
+            header {
+                display: flex;
+                align-items: flex-end;
+                .greeting-p {
+                    margin-bottom: 12.2%;
+                }
+            }
+        }
+        .contact-me {
+            margin: auto;
+            width: 54%;
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                #message {
+                    height: 8em; 
+                }
+            }
+            
+        }
+       
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        padding: 0 5%;
+        svg {margin-left: 1em;}
+        .resume {
+            display: flex;
         }
     }
     

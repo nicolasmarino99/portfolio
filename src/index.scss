@@ -27,6 +27,9 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  a {
+    text-decoration: none;
+  }
   h1 {
     font-family: 'Playfair Display', serif;
     color: white;
@@ -40,6 +43,14 @@ body {
     line-height: 150px;
     color: rgba(255, 255, 255, 0.452);
   }
+  input {
+    margin: 0.5em 0;
+    height: 2.5em;
+    background: #101010;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
   p {
     font-size: 13px;
     font-weight: 300;
@@ -49,6 +60,8 @@ body {
     background: #DB4747;
     color: white;
     border: none;
+    height: 2.5em;
+    border-radius: 5px;
   
     &:hover,
     &:focus {
