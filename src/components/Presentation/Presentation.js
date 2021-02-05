@@ -3,14 +3,19 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Presentation.scss'
 import { faAngellist, faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { motion, useIsPresent } from 'framer-motion';
 
 const Presentation = () => {
+    const isPresent = useIsPresent()
     return (
+    
         <div className="Presentation" id="Hello">
-            <div className="greeting">
+            {isPresent && (<motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }} className="greeting">
                 <div className="number" id="n1">01</div>
                 <p className="greeting-p">Hello, I’m</p>
-                <h1 id="name">Charlie Giorgiana</h1>
+                <h1 id="name">Nicolás Mariño</h1>
                 <svg height="80" width="80" className="circle-svg">
                     <circle cx="40" cy="40" r="35" stroke-width="3" fill="#DB4747" />
                 </svg>
@@ -29,10 +34,11 @@ const Presentation = () => {
                     <FontAwesomeIcon className="icon" icon={faMedium} />
                     <FontAwesomeIcon className="icon" icon={faAngellist} />
                 </div>
-            </div>
+            </motion.div>)}
         </div>
-    );
-};
+        
+
+)};
 
 
 Presentation.propTypes = {

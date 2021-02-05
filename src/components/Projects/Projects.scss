@@ -1,6 +1,6 @@
 .Projects {
     background-color: rgb(27,27,30);
-    height: 155vh;
+    height: 131vh;
     .header {
         display: flex;
         padding-left: 12%;
@@ -14,211 +14,40 @@
         position: relative;
         top: -4%;
     }
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(12, 58%);
-        grid-column-gap: 0.5%;
-        grid-row-gap: 8%;
-        div {
-            filter: opacity(0.5);
-        }
-    }
-
-    .div1 {
-        grid-area: 1 / 1 / 4 / 4;
-        background-image: url("/assets/facebook-clone/FacebookClone3.jpg");
-        background-size: cover;
-    }
-    .div2 {
-        grid-area: 4 / 1 / 7 / 4;
-        background-image: url("/assets/facebook-clone/chat.png");
-        background-size: cover;
-    }
-    .div3 {
-        background-image: url("/assets/facebook-clone/login_page.png");
-            grid-area: 1 / 4 / 7 / 9;
-            background-size: cover;
-        }
-    .div4 {
-        background-image: url("/assets/facebook-clone/FacebookClone2.jpg");
-            grid-area: 7 / 6 / 10 / 9;
-            background-size: cover;
-        }
-    .div5 {
-            background-image: url("/assets/facebook-clone/home_page.png");
-            grid-area: 10 / 6 / 13 / 9;
-            background-size: cover;
-        }
-    .div6 {
-        background-image: url("/assets/facebook-clone/FacebookClone.jpg");
-            grid-area: 7 / 1 / 13 / 6;
-            background-size: cover;
-        }
-        .parenta {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(12, 58%);
-            grid-column-gap: 0.5%;
-            grid-row-gap: 8%;
-            div {
-                filter: opacity(0.5);
-            }
-        }
-    
-        .div1a {
-            grid-area: 1 / 1 / 4 / 4;
-            background-image: url("/assets/pokedex/app.jpg");
-            background-size: cover;
-        }
-        .div2a {
-            grid-area: 4 / 1 / 7 / 4;
-            background-image: url("/assets/pokedex/appM.jpg");
-            background-size: cover;
-        }
-        .div3a {
-            background-image: url("/assets/pokedex/apppkM.jpg");
-                grid-area: 1 / 4 / 7 / 9;
-                background-size: cover;
-            }
-        .div4a {
-            background-image: url("/assets/pokedex/pokedex.jpg");
-                grid-area: 7 / 6 / 10 / 9;
-                background-size: cover;
-            }
-        .div5a {
-                background-image: url("/assets/pokedex/pokedex1.jpg");
-                grid-area: 10 / 6 / 13 / 9;
-                background-size: cover;
-            }
-        .div6a {
-            background-image: url("/assets/pokedex/pokedex2.jpg");
-                grid-area: 7 / 1 / 13 / 6;
-                background-size: cover;
-            }
-            .parentb {
-                display: grid;
-                grid-template-columns: repeat(8, 1fr);
-                grid-template-rows: repeat(12, 58%);
-                grid-column-gap: 0.5%;
-                grid-row-gap: 8%;
-                div {
-                    filter: opacity(0.5);
-                }
-            }
-        
-            .div1b {
-                grid-area: 1 / 1 / 4 / 4;
-                background-image: url("/assets/trello-clone/SuperToDo1.jpg");
-                background-size: cover;
-            }
-            .div2b {
-                grid-area: 4 / 1 / 7 / 4;
-                background-image: url("/assets/trello-clone/SuperToDo2.jpg");
-                background-size: cover;
-            }
-            .div3b {
-                background-image: url("/assets/trello-clone/SuperToDo3.jpg");
-                    grid-area: 1 / 4 / 7 / 9;
-                    background-size: cover;
-                }
-            .div4b {
-                background-image: url("/assets/trello-clone/SuperToDo4.jpg");
-                    grid-area: 7 / 6 / 10 / 9;
-                    background-size: cover;
-                }
-            .div5b {
-                    background-image: url("/assets/trello-clone/SuperToDo5.jpg");
-                    grid-area: 10 / 6 / 13 / 9;
-                    background-size: cover;
-                }
-            .div6b {
-                background-image: url("/assets/trello-clone/SuperToDo6.jpg");
-                    grid-area: 7 / 1 / 13 / 6;
-                    background-size: cover;
-                }
-                .parentc {
-                    display: grid;
-                    grid-template-columns: repeat(8, 1fr);
-                    grid-template-rows: repeat(12, 58%);
-                    grid-column-gap: 0.5%;
-                    grid-row-gap: 8%;
-                    div {
-                        filter: opacity(0.5);
-                    }
-                }
-            
-                .div1c {
-                    grid-area: 1 / 1 / 4 / 4;
-                    background-image: url("/assets/body-tr/bt4.jpg");
-                    background-size: cover;
-                }
-                .div2c {
-                    grid-area: 4 / 1 / 7 / 4;
-                    background-image: url("/assets/body-tr/bt5.jpg");
-                    background-size: cover;
-                }
-                .div3c {
-                    background-image: url("/assets/body-tr/bt6.jpg");
-                        grid-area: 1 / 4 / 7 / 9;
-                        background-size: cover;
-                    }
-                .div4c {
-                    background-image: url("/assets/body-tr/bt7.jpg");
-                        grid-area: 7 / 6 / 10 / 9;
-                        background-size: cover;
-                    }
-                .div5c {
-                        background-image: url("/assets/body-tr/bt8.jpg");
-                        grid-area: 10 / 6 / 13 / 9;
-                        background-size: cover;
-                    }
-                .div6c {
-                    background-image: url("/assets/body-tr/bt9.jpg");
-                        grid-area: 7 / 1 / 13 / 6;
-                        background-size: cover;
-                    }
-                    .parentd {
-                        display: grid;
-                        grid-template-columns: repeat(8, 1fr);
-                        grid-template-rows: repeat(12, 58%);
-                        grid-column-gap: 0.5%;
-                        grid-row-gap: 8%;
-                        div {
-                            filter: opacity(0.5);
-                        }
-                    }
-                    .div1d {
-                        grid-area: 1 / 1 / 4 / 4;
-                        background-image: url("/assets/private-events/PrivateEvents.jpg");
-                        background-size: cover;
-                    }
-                    .div2d {
-                        grid-area: 4 / 1 / 7 / 4;
-                        background-image: url("/assets/private-events/PrivateEvents1.jpg");
-                        background-size: cover;
-                    }
-                    .div3d {
-                        background-image: url("/assets/private-events/PrivateEvents2.jpg");
-                            grid-area: 1 / 4 / 7 / 9;
-                            background-size: cover;
-                        }
-                    .div4d {
-                        background-image: url("/assets/private-events/PrivateEvents3.jpg");
-                            grid-area: 7 / 6 / 10 / 9;
-                            background-size: cover;
-                        }
-                    .div5d {
-                            background-image: url("/assets/private-events/PrivateEvents4.jpg");
-                            grid-area: 10 / 6 / 13 / 9;
-                            background-size: cover;
-                        }
-                    .div6d {
-                        background-image: url("/assets/private-events/PrivateEvents5.jpg");
-                            grid-area: 7 / 1 / 13 / 6;
-                            background-size: cover;
-                        }
     .carousel-item {
-        height: 125vh;
+        height: 94vh;
     }
+    main {
+        .container {
+          position: relative;
+          .row {
+            height: 95vh;
+            align-items: center;
+            .image-container {
+              position: relative;
+              .thumbnail {
+                overflow: hidden;
+                position: relative;
+                .frame {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+              .information {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                text-transform: uppercase;
+                .location {
+                  span:nth-child(2) {
+                    margin-left: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
 }

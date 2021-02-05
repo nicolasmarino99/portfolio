@@ -1,5 +1,13 @@
 .App {
     display: grid;
+    .progress-icon {
+        color: white;
+        position: fixed;
+        z-index: 1000;
+        transform: scale(.1);
+        bottom: -19%;
+        left: -43%;
+    }
     nav {
         transform: rotate(90deg);
         position: fixed;

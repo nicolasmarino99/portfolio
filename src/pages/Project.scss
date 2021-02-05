@@ -1,0 +1,144 @@
+$red: #DB4747;
+$white: #ffffff;
+$black:#1B1B1E;
+
+.single {
+    background: $black;
+    height: 181vh;
+    overflow-x: hidden;
+
+    .carousel {
+        width: 45%;
+        .carousel-inner {
+            width: auto;
+            .carousel-item {
+                display: flex;
+                justify-content: center;
+                height: 47vh;
+                img {
+                 transform: scale(0.6);
+                }
+            }
+        }
+    }
+    .container {
+        .info {
+            width: 50%;
+            display: flex;
+            margin-top: 8%;
+            flex-direction: column;
+            align-items: center;
+            p {
+                width: 85%;
+            }
+            .links {
+                display: flex;
+                justify-content: space-around;
+                width: 83%;
+                font-size: 13px;
+                font-weight: bold;
+                
+                a {
+                    color: $red;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        font-size: 17px;
+                        margin-left: 0.5em;
+                    }
+                    
+                }
+                
+            }
+        }
+      .top-row {
+        height: 60vh;
+        width: 100%;
+        align-items: flex-end;
+        display: flex;
+        justify-content: center;
+        .top {
+          padding-bottom: 40px;
+          .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .location {
+              span:nth-child(2) {
+                margin-left: 16px;
+              }
+            }
+            .mua {
+              text-transform: uppercase;
+            }
+          }
+          .model {
+            .first {
+              margin-right: 72px;
+            }
+            span {
+              display: inline-block;
+              position: relative;
+              font-weight: 400;
+              font-size: 224px;
+              font-family: "Maragsa";
+              @media (max-width: 1440px) {
+                font-size: 128px;
+              }
+            }
+          }
+        }
+      }
+      .bottom-row {
+        height: 50vh;
+        .bottom {
+          height: 100%;
+          width: 100%;
+          .thumbnail-single {
+            width: 119%;
+            height: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: absolute;
+            left: -9%;
+            right: 0;
+            overflow-x: hidden;
+            .frame-single {
+                div {
+                    height: 58vh;
+                    width: 100% !important; 
+                }
+              img {
+                position: absolute;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .scroll-for-more {
+            position: absolute;
+            top: 45%;
+            z-index: 20;
+          .icon {
+            svg {
+              height: auto;
+              width: 28px;
+            }
+          }
+          .text {
+            margin-top: 8px;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .detailed-information {
+        position: relative;
+        top: 13%;
+    }
+    .container {
+      top: 26%;
+    }
+}
