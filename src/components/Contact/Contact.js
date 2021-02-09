@@ -1,10 +1,22 @@
 import React from 'react';
 import './Contact.scss'
+import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faAngellist, faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_9zw140j', 'template_djlim6n', e.target, 'user_wDALgC6I2XyoXwxG4PisX')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
     return (
         <div className="Contact" id="Contact">
             <div className="contact-container">
@@ -20,11 +32,11 @@ const Contact = () => {
                 <div className="contact-me">
                     <h1>Get started</h1>
                     <p className="presentaion-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <form>
-                        <input type="text"></input>
-                        <input type="text"></input>
-                        <input type="text" id="message" placeholder="Enter your message here..."></input>
-                        <button type="submit">Start collaboration</button>
+                    <form onSubmit={sendEmail}>
+                        <input type="text" name="user_name" placeholder="Your name" />
+                        <input type="email" name="user_email" placeholder="Your email" />
+                        <textarea type="text" name="message" id="message" placeholder="Enter your message here..." />
+                        <input id="submit" type="submit" />
                     </form>
                 </div>
                 

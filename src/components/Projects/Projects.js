@@ -47,7 +47,7 @@ const Projects = ({imageDetails, image}) => {
         const fadeOut = (element) => {
             gsap.to(element, 1, {
                 opacity: 0,
-                y: 0,
+                y: 10,
                 ease: 'power4.out',
             })
         }

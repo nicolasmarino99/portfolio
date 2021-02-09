@@ -20,34 +20,7 @@ const SkillSet = () => {
     ['Soft skills', softskillsLogo, ['Communication', 'Problem-solving', 'Patience', 'Adaptability']],
   ])
 
-  const SkillSetRef = useRef(null)
-
-    const intersection = useIntersection(SkillSetRef, {
-        root: null,
-        rootMargin: "0",
-        threshold: 1
-    })
-
-    const fadeIn2 = (element) => {
-        gsap.to(element, 1, {
-            opacity: 0,
-            x: -50,
-            ease: 'power4.out',
-        })
-    }
-    const fadeOut2 = (element) => {
-        gsap.to(element, 1, {
-            opacity: 1,
-            x: 0,
-            ease: 'power4.out',
-            stagger: {
-                amount: 1
-            }
-        })
-    }
-    intersection && intersection.intersectionRatio < 1 ?
-    fadeOut2(".fadeIn2")
-    : fadeIn2(".fadeIn2")
+  
 
   const SkillCard = ({item}) => (
       <div className="SkillCard">
@@ -60,7 +33,7 @@ const SkillSet = () => {
     );
 
     return (
-        <div className="SkillSet" ref={SkillSetRef} id="Services">
+        <div className="SkillSet" id="Services">
             <div className="skills fadeIn2">
                 {skills.map((item,i) => <SkillCard key={i} item={item}/>)}
             </div>

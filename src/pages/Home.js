@@ -13,7 +13,6 @@ const Home = ({imageDetails, image}) => {
 
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
 
-  
   const ProjectsRef = useRef(null)
   const SkillSetRef = useRef(null)
   const ContactRef = useRef(null)
