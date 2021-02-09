@@ -1,65 +1,85 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Projects.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-bootstrap';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Link } from "react-router-dom";
-import ProgressiveImage from "react-progressive-image";
-import imgage from "../../assets/pokedex/pokedex.jpg"
+import FacebookClone from "../../assets/facebook-clone/FacebookClone.jpg"
+import pokedex from "../../assets/pokedex/pokedex.jpg"
+import SuperToDo from "../../assets/trello-clone/SuperToDo.jpg"
+import PrivateEvents from "../../assets/private-events/PrivateEvents.jpg"
+import BodyTrainer from "../../assets/body-tr/bt.jpg"
 import { motion, useIsPresent } from 'framer-motion';
+import { wrap } from "popmotion";
+import Slides from './Slides';
+import { useIntersection } from 'react-use';
+import gsap from 'gsap';
 
 const Projects = ({imageDetails, image}) => {
-    const isPresent = useIsPresent()
+    
+    // eslint-disable-next-line no-unused-vars
     const [index, setIndex] = useState(0);
+    // eslint-disable-next-line no-unused-vars
+    const [projects, setProjects] = useState([
+        {name: 'Pokedex', img: pokedex},
+        {name: 'Facebook-Clone', img: FacebookClone},
+        {name: 'Body-Trainer', img: BodyTrainer},
+        {name: 'Trello-Clone', img: SuperToDo},
+        {name: 'Private-Events', img: PrivateEvents},
+    ])
 
-    const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-    }
+        const ProjectsRef = useRef(null)
+
+        const intersection = useIntersection(ProjectsRef, {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5
+        })
+
+        const fadeIn = (element) => {
+            gsap.to(element, .5, {
+                opacity: 1,
+                y: -50,
+                ease: 'power4.out',
+                stagger: {
+                    amount: 0.5
+                }
+            })
+        }
+        const fadeOut = (element) => {
+            gsap.to(element, 1, {
+                opacity: 0,
+                y: 0,
+                ease: 'power4.out',
+            })
+        }
+        intersection && intersection.intersectionRatio < 0.5 ?
+        fadeOut(".fadeIn")
+        : fadeIn(".fadeIn")
+
 
     const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
     return (
-        <div className="Projects" id="Portfolio">
-            <div className="header">
-                <div className="number" id="n1">02</div>
-                <p className="greeting-projects">My recent works</p>
+        <div ref={ProjectsRef} className="Projects" id="Portfolio">
+            <div className="header fadeIn">
+                <div className="number fadeIn" id="n1">02</div>
+                <p className="greeting-projects fadeIn">My recent works</p>
             </div>
-            {isPresent && (<motion.h1 id="h1-project">Portfolio</motion.h1>)}
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <h1
+                className="fadeIn"
+                id="h1-project"
+            >
+                Portfolio
+            </h1>
+            <Carousel className="fadeIn">
+                {projects.map((project, i) =>
                 <Carousel.Item>
-                    <main>
-                        <div className='container'>
-                            <div className='row center'>
-                            <div className='image-container'>
-                                <div
-                                className='thumbnail'
-                                ref={image}
-                                style={{
-                                    width: `${imageDetails.width}`,
-                                }}>
-                                <div className='frame'>
-                                    <Link to={`/project/yasmeen-tariq`}>
-                                        <ProgressiveImage
-                                            src={imgage}
-                                            placeholder={imgage}>
-                                            {(src) => <motion.img whileHover={{ scale: 1.1}} transition={transition} exit={{scale: 0.5, opacity:0}} src={src} alt='Yasmeen Tariq' />}
-                                        </ProgressiveImage>
-                                    </Link>
-                                </div>
-                                </div>
-                                <motion.div exit={{opacity: 0}} transition={transition} className='information'>
-                                <div className='title'>Yasmeen Tariq</div>
-                                <div className='location'>
-                                    <span>28.538336</span>
-                                    <span>-81.379234</span>
-                                </div>
-                                </motion.div>
-                            </div>
-                            </div>
-                        </div>
-                    </main>
+                    <Slides
+                        key={i}
+                        image={project.img}
+                        imageDetails={imageDetails}
+                        name={project.name}
+                    />
                 </Carousel.Item>
+                )}
             </Carousel>
         </div>
     );

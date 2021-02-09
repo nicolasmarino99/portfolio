@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './SkillSet.scss'
 import frameworksLogo from '../../assets/icons/ic_frameworks.svg';
@@ -6,9 +6,13 @@ import languagesLogo from '../../assets/icons/ic_languages.svg';
 import skillsLogo from '../../assets/icons/ic_skills.svg';
 import softskillsLogo from '../../assets/icons/ic_soft-skills.svg';
 import resume from '../../assets/Resume.pdf'
+import Tilt from 'react-vanilla-tilt'
+import { useIntersection } from 'react-use';
+import gsap from "gsap";
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const SkillSet = () => {
+  // eslint-disable-next-line no-unused-vars
   const [skills, setSkills] = useState([
     ['Languages', languagesLogo, ['JavaScript (ES5/ES6)','Ruby','HTML','CSS3/SASS', 'Python']],
     ['Frameworks', frameworksLogo, ['React', 'Ruby on Rails', 'Material', 'Jest', 'React-testing-lib.', 'Redux', 'Capibara', 'Rspec', 'Phaser3']],
@@ -16,27 +20,56 @@ const SkillSet = () => {
     ['Soft skills', softskillsLogo, ['Communication', 'Problem-solving', 'Patience', 'Adaptability']],
   ])
 
+  const SkillSetRef = useRef(null)
+
+    const intersection = useIntersection(SkillSetRef, {
+        root: null,
+        rootMargin: "0",
+        threshold: 1
+    })
+
+    const fadeIn2 = (element) => {
+        gsap.to(element, 1, {
+            opacity: 0,
+            x: -50,
+            ease: 'power4.out',
+        })
+    }
+    const fadeOut2 = (element) => {
+        gsap.to(element, 1, {
+            opacity: 1,
+            x: 0,
+            ease: 'power4.out',
+            stagger: {
+                amount: 1
+            }
+        })
+    }
+    intersection && intersection.intersectionRatio < 1 ?
+    fadeOut2(".fadeIn2")
+    : fadeIn2(".fadeIn2")
+
   const SkillCard = ({item}) => (
       <div className="SkillCard">
         <img src={item[1]} alt={item[0]}/>
         <h2>{item[0]}</h2>
         <ul>
-          {item[2].map(e => <li>{e}</li>)}
+          {item[2].map((e, i) => <li key={i}>{e}</li>)}
         </ul>
       </div>
     );
 
     return (
-        <div className="SkillSet" id="Services">
-            <div className="skills">
-                {skills.map(item => <SkillCard item={item}/>)}
+        <div className="SkillSet" ref={SkillSetRef} id="Services">
+            <div className="skills fadeIn2">
+                {skills.map((item,i) => <SkillCard key={i} item={item}/>)}
             </div>
-            <div className="info-cv">
-              <div className="number" id="n3">03</div>
-              <p className="greeting-p">Some words</p>
-              <h1 id="name">About me</h1>
-              <p className="presentaion-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-              <a href={resume} className="social">
+            <div className="info-cv ">
+              <div className="number fadeIn2" id="n3">03</div>
+              <p className="greeting-p fadeIn2">Some words</p>
+              <h1 id="name" className="fadeIn2">About me</h1>
+              <p className="presentaion-p fadeIn2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <a href={resume} className="social fadeIn2">
                     <p className="special-p">Get my Resume</p>
                     <FontAwesomeIcon className="icon" icon={faExternalLinkAlt}/>
               </a>

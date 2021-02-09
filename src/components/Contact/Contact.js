@@ -14,7 +14,7 @@ const Contact = () => {
                         <p className="greeting-p">Interested in collaborating?</p>
                     </header>
                     <svg height="80" width="80" className="circle-svg">
-                        <circle cx="40" cy="40" r="35" stroke-width="3" fill="#DB4747" />
+                        <circle cx="40" cy="40" r="35" fill="#DB4747" />
                     </svg>
                 </div>
                 <div className="contact-me">

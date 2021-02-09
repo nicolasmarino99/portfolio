@@ -8,6 +8,7 @@
             align-self: flex-end;
             margin-bottom: 3.7%;
         }
+
     }
     #h1-project {
         padding-left: 20.5%;
@@ -22,6 +23,8 @@
           position: relative;
           .row {
             height: 95vh;
+            display: flex;
+            justify-content: center;
             align-items: center;
             .image-container {
               position: relative;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion, useSpring, useTransform, useViewportScroll } from "framer-motion"
 import Presentation from "../components/Presentation/Presentation";
 import Contact from "../components/Contact/Contact"
@@ -12,6 +12,11 @@ const Home = ({imageDetails, image}) => {
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
+
+  
+  const ProjectsRef = useRef(null)
+  const SkillSetRef = useRef(null)
+  const ContactRef = useRef(null)
 
   return (
     <div className="App">
@@ -46,7 +51,7 @@ const Home = ({imageDetails, image}) => {
         <a href="Services">Services</a>
         <a href="Contact">Contact</a>
     </nav>
-     <Presentation />
+     <Presentation sectionRef />
      <Projects imageDetails={imageDetails} image={image}/>
      <SkillSet />
      <Contact />
