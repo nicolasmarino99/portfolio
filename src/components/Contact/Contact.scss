@@ -1,7 +1,6 @@
 .Contact {
     background: #212123;
-    height: 123vh;
-
+    
     .contact-container {
         margin: auto;
         width: 55%;
@@ -34,6 +33,9 @@
             
         }
        
+    }
+    .network {
+        display: flex;
     }
     .social {
         display: flex;

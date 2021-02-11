@@ -29,6 +29,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   a {
     text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
   }
   h1 {
     font-family: 'Playfair Display', serif;

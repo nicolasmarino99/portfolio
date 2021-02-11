@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faAngellist, faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import resume from '../../assets/Resume.pdf'
 
 const Contact = () => {
     function sendEmail(e) {
@@ -43,16 +44,18 @@ const Contact = () => {
             </div>
             <div className="social">
                         <div className="resume">
+                        <a href={resume}>
                             <p className="special-p">Get my Resume</p>
                             <FontAwesomeIcon className="icon" icon={faExternalLinkAlt}/>
+                        </a>
                         </div>
                             <div className="network">
-                                <FontAwesomeIcon className="icon" icon={faStackOverflow}/>
-                                <FontAwesomeIcon className="icon" icon={faGithub} />
-                                <FontAwesomeIcon className="icon" icon={faTwitter} />
-                                <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                                <FontAwesomeIcon className="icon" icon={faMedium} />
-                                <FontAwesomeIcon className="icon" icon={faAngellist} />
+                                <a href="https://stackoverflow.com/users/13809115/nicol%c3%a1s-mari%c3%b1o-parra"><FontAwesomeIcon className="icon" icon={faStackOverflow}/></a>
+                                <a href="https://github.com/nicolasmarino99"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
+                                <a href="https://twitter.com/nicolasmarino99"><FontAwesomeIcon className="icon" icon={faTwitter} /></a>
+                                <a href="https://www.linkedin.com/in/nicol%C3%A1s-mari%C3%B1o-parra-45a707177/"><FontAwesomeIcon className="icon" icon={faLinkedin} /></a>
+                                <a href="https://medium.com/@nicolasmarinoparra"><FontAwesomeIcon className="icon" icon={faMedium} /></a>
+                                <a href="https://angel.co/u/nicolas-marino-parra"><FontAwesomeIcon className="icon" icon={faAngellist} /></a>
                             </div>
                     </div>
         </div>
