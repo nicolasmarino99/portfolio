@@ -1,6 +1,6 @@
 .Projects {
     background-color: rgb(27,27,30);
-    height: 131vh;
+    height: 121vh;
     .header {
         display: flex;
         padding-left: 12%;
@@ -13,7 +13,11 @@
     #h1-project {
         padding-left: 20.5%;
         position: relative;
-        top: -4%;
+        top: -12%;
+    }
+    .carousel {
+      position: relative;
+      top: -13%;
     }
     .carousel-item {
         height: 94vh;
