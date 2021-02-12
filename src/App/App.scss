@@ -7,6 +7,11 @@
         transform: scale(.1);
         bottom: -19%;
         left: -43%;
+        @media (max-width: 600px) { 
+            transform: scale(0.2);
+            bottom: 50%;
+            left: -39%;
+          }
     }
     nav {
         transform: rotate(90deg);
