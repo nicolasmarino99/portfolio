@@ -46,7 +46,12 @@ const Presentation = () => {
                 <svg height="80" width="80" className="circle-svg">
                     <circle cx="40" cy="40" r="35" fill="#DB4747" />
                 </svg>
-                <p className="presentaion-p fadeIn1">Hello! I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+                <p className="presentaion-p fadeIn1">
+                    Welcome to my website, I am full-Stack developer who can help
+                    you build your product, implement a web-feature or develop your website.
+                    Checkout and click over my projects! If you like my work, you can write me
+                    on the contact section or just contact me thourgh my social media.
+                </p>
                 <div className="social fadeIn1">
                     <p className="special-p">See my works</p>
                 <svg width="15%" height="78px">

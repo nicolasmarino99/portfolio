@@ -32,7 +32,11 @@ const Contact = () => {
                 </div>
                 <div className="contact-me">
                     <h1>Get started</h1>
-                    <p className="presentaion-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className="presentaion-p">
+                        Interseted?, you can email me to
+                        nicolasmarinoparra@gmail.com or you can fill this
+                        form. Thank you for visiting!
+                    </p>
                     <form onSubmit={sendEmail}>
                         <input type="text" name="user_name" placeholder="Your name" />
                         <input type="email" name="user_email" placeholder="Your email" />

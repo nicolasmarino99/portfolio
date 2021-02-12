@@ -61,7 +61,7 @@ const Projects = ({imageDetails, image}) => {
         <div ref={ProjectsRef} className="Projects" id="Portfolio">
             <div className="header fadeIn">
                 <div className="number fadeIn" id="n1">02</div>
-                <p className="greeting-projects fadeIn">My recent works</p>
+                <p className="greeting-projects fadeIn">My recent works, Click on the slide to see more info. about the project.</p>
             </div>
             <h1
                 className="fadeIn"

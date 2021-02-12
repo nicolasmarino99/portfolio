@@ -13,9 +13,6 @@ const Home = ({imageDetails, image}) => {
 
   useEffect(() => yRange.onChange(v => setIsComplete(v >= 1)), [yRange]);
 
-  const ProjectsRef = useRef(null)
-  const SkillSetRef = useRef(null)
-  const ContactRef = useRef(null)
 
   return (
     <div className="App">
@@ -50,7 +47,7 @@ const Home = ({imageDetails, image}) => {
         <a href="Services">Services</a>
         <a href="Contact">Contact</a>
     </nav>
-     <Presentation sectionRef />
+     <Presentation />
      <Projects imageDetails={imageDetails} image={image}/>
      <SkillSet />
      <Contact />

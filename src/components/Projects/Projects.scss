@@ -1,7 +1,7 @@
 .Projects {
     background-color: rgb(27,27,30);
-    height: 121vh;
-    padding-top: 20%;
+    height: 142vh;;
+    padding-top: 10%;
     @media (max-width: 600px) { 
       padding-top: 29%;
       height: 138vh;
@@ -12,8 +12,10 @@
         .greeting-projects {
             align-self: flex-end;
             margin-bottom: 3.7%;
+            width: 17%;
             @media (max-width: 600px) { 
               margin-bottom: 9.7%;
+              width: 37%;
             }
         }
 
