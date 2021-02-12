@@ -4,6 +4,9 @@
     .contact-container {
         margin: auto;
         width: 55%;
+        @media (max-width: 600px) { 
+            width: 95%;
+        }
         .title {
             display: flex;
             justify-content: space-between;
@@ -22,6 +25,13 @@
         .contact-me {
             margin: auto;
             width: 54%;
+            @media (max-width: 600px) { 
+                width: 66%;
+            }
+            h1 {
+                font-size: 46px;
+                margin-bottom: 0.5em;
+            }
             form {
                 display: flex;
                 flex-direction: column;

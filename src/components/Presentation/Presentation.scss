@@ -33,8 +33,8 @@
 
         }
         .presentaion-p {
-            width: 35%;
-            margin: auto;
+            width: 92%;
+            margin-top: 2em;
             padding-left: 5.5%;
         }
         .social {
@@ -58,10 +58,9 @@
         }
     }
     @media (max-width: 600px) { 
-        height: 127vh;
+        height: 100vh;
         .greeting {
             
-            display: none;
             /* justify-content: center; */
             /* flex-direction: column; */
             /* align-items: center; */
@@ -84,6 +83,8 @@
                 line-height: 1;
                 margin-bottom: 0;
                 width: 83%;
+                font-size: 3em;
+                margin: 0.2em 0;
             }
             .special-p {
                 font-family: 'Roboto', sans-serif;
@@ -93,7 +94,7 @@
     
             }
             .presentaion-p {
-                width: 86%;
+                width: 93%;
                 margin: auto;
                 padding-left: 5.5%;
             }
