@@ -21,8 +21,6 @@ const Project = ({ imageDetails }) => {
 
     let {id} = useParams();
 
-    console.log(id, useParams())
-
     let project = projects[id]
 
     console.log(project)
@@ -83,21 +81,14 @@ const Project = ({ imageDetails }) => {
                 transition: { delay: 1.2, ...transition },
               }} className='details'>
               <div className='tags'>
-                <span className="React">React</span>
-                <span className="Redux">Redux</span>
-                <span className="Ruby">Ruby</span>
+                {project.technologies.map(tech => <span className="tag">{tech}</span>)}
               </div>
-              <div className='mua'>MUA: @mylifeascrystall</div>
             </motion.div>
             <motion.div className='model'>
-              <motion.span className='first'  variants={firstName}>
-                <motion.span variants={letter}>P</motion.span>
-                <motion.span variants={letter}>o</motion.span>
-                <motion.span variants={letter}>k</motion.span>
-                <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>d</motion.span>
-                <motion.span variants={letter}>e</motion.span>
-                <motion.span variants={letter}>x</motion.span>
+              <motion.span className='first' variants={firstName}>
+                {project.name.split('').map(
+                  sym => <motion.span variants={letter}>{sym}</motion.span>
+                  )}
               </motion.span>
               <motion.span className='last'  variants={lastName}>
                 <motion.span variants={letter}>a</motion.span>
@@ -156,20 +147,7 @@ const Project = ({ imageDetails }) => {
             </Carousel>
             <motion.div variants={firstName} className="info">
                 <motion.p variants={letter}>
-                The Objective was to use redux and react for filter and transform data from an external Api. In this case I chose a pokemon Api.
-
-                In this app you could find:
-
-                A navbar that automaticly filters a pokemon based on its ID or name.
-                A pokedex with an infinite scroller
-                A nice UI design
-                Routes to provide extra info
-                The following features are under construction:
-
-                evolution chains
-                Moves charachteristics
-                Testing
-                extra filters
+                  {project.description}
                 </motion.p>
                 <motion.div variants={letter} className="links">
                     <a href={`${project.live}`}>See live <FontAwesomeIcon className="icon" icon={faExternalLinkAlt}/></a>

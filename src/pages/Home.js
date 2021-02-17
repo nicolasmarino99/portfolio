@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useSpring, useTransform, useViewportScroll } from "framer-motion"
 import Presentation from "../components/Presentation/Presentation";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Contact from "../components/Contact/Contact"
 import Projects from "../components/Projects/Projects"
 import SkillSet from '../components/SkillSet/SkillSet';
@@ -42,10 +43,38 @@ const Home = ({imageDetails, image}) => {
         />
       </svg>
     <nav>
-        <a href="Hello">Hello</a>
-        <a href="Portfolio">Portfolio</a>
-        <a href="Services">Services</a>
-        <a href="Contact">Contact</a>
+        <Link
+         activeClass="active"
+         to="Hello"
+         spy={true}
+         smooth={true}
+         offset={70}
+         duration={500}
+        >
+          Hello
+        </Link>
+        <Link activeClass="active"
+          to="Portfolio"
+          spy={true}
+          smooth={true}
+          offset={90}
+          duration={500}
+        >Portfolio
+        </Link>
+        <Link  activeClass="active"
+          to="Services"
+          spy={true}
+          smooth={true}
+          offset={70}
+          duration={500}
+        >Services</Link>
+        <Link  activeClass="active"
+          to="Contact"
+          spy={true}
+          smooth={true}
+          offset={70}
+          duration={500}
+        >Contact</Link>
     </nav>
      <Presentation />
      <Projects imageDetails={imageDetails} image={image}/>

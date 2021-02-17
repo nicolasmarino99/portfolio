@@ -29,6 +29,9 @@
             margin: 0 1.2em;
             font-weight: 300;
             font-size: 13px;
+            &:hover {
+            cursor: pointer;
+            }
         }
     }
 }
