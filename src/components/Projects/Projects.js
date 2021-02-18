@@ -19,11 +19,11 @@ const Projects = ({imageDetails, image}) => {
     const [index, setIndex] = useState(0);
     // eslint-disable-next-line no-unused-vars
     const [projects, setProjects] = useState([
-        {name: 'Pokedex', img: pokedex},
-        {name: 'Facebook-Clone', img: FacebookClone},
-        {name: 'Body-Trainer', img: BodyTrainer},
-        {name: 'Trello-Clone', img: SuperToDo},
-        {name: 'Private-Events', img: PrivateEvents},
+        {name: 'Pokedex', img: pokedex, links: ['https://github.com/nicolasmarino99/pokedex', 'https://pokedex99.herokuapp.com/']},
+        {name: 'Facebook-Clone', img: FacebookClone, links: ['https://github.com/nicolasmarino99/facebook_clone','https://fb-clone-bruna-nico.herokuapp.com/contents/new',]},
+        {name: 'Body-Trainer', img: BodyTrainer, links: ['https://github.com/nicolasmarino99/frontend-body-tr','https://frontend-body-tr.herokuapp.com/',]},
+        {name: 'Trello-Clone', img: SuperToDo, links: ['https://github.com/nicolasmarino99/todo-list','https://rawcdn.githack.com/bruna-genz/todo-list/261fbc6ced78de846890be0e6197e822e24b3f57/dist/index.html',]},
+        {name: 'Private-Events', img: PrivateEvents, links: ['https://github.com/nicolasmarino99/members-only','https://pure-brook-88318.herokuapp.com/',]},
     ])
 
         const ProjectsRef = useRef(null)
@@ -77,6 +77,7 @@ const Projects = ({imageDetails, image}) => {
                         image={project.img}
                         imageDetails={imageDetails}
                         name={project.name}
+                        links={project.links}
                     />
                 </Carousel.Item>
                 )}

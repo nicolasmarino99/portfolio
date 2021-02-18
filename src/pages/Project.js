@@ -137,14 +137,7 @@ const Project = ({ imageDetails }) => {
       <div className='detailed-information'>
         <div className='container'>
           <div className='row'>
-          <Carousel>
-            
-            {project.images.map(image => (
-              <Carousel.Item>
-                    <img src={image} alt='an' />
-                </Carousel.Item>
-            ))}
-            </Carousel>
+            <img className="project-img" src={project.images[0]} alt='an'/>
             <motion.div variants={firstName} className="info">
                 <motion.p variants={letter}>
                   {project.description}
