@@ -44,8 +44,7 @@ const SkillSet = () => {
               <p className="presentaion-p fadeIn2">
                 I am curious, constant and pasionate person who loves to constaltly learn
                 while being challenged with new projects.
-                I also love to work in teams and meet people around the world, thus I know and like to
-                work in a team. Besides my love for computing I like playing music, reading, doing sports, traveling 
+                I also love to work in teams and meet people around the world, thus I know how to work in a team. Besides my love for computing I like playing music, reading, doing sports, traveling 
                 and learning languages.
               </p>
               <a href={resume} className="social fadeIn2">
