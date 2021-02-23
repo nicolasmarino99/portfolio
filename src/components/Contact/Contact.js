@@ -33,7 +33,7 @@ const Contact = () => {
                 <div className="contact-me">
                     <h1>Get started</h1>
                     <p className="presentaion-p">
-                        Interseted?, you can email me to
+                        Interested?, you can email me to
                         nicolasmarinoparra@gmail.com or you can fill this
                         form. Thank you for visiting!
                     </p>

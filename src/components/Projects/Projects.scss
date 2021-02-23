@@ -10,12 +10,17 @@
         display: flex;
         padding-left: 12%;
         .greeting-projects {
+          
             align-self: flex-end;
             margin-bottom: 3.7%;
             width: 17%;
             @media (max-width: 600px) { 
               margin-bottom: 9.7%;
               width: 37%;
+            }
+            b {
+              font-weight: 700;
+              font-size: 14px;
             }
         }
 

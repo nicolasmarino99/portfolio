@@ -47,7 +47,7 @@ const SkillSet = () => {
                 I also love to work in teams and meet people around the world, thus I know how to work in a team. Besides my love for computing I like playing music, reading, doing sports, traveling 
                 and learning languages.
               </p>
-              <a href={resume} className="social fadeIn2">
+              <a href={resume} target="_blank" rel="noopener noreferrer" className="social fadeIn2">
                     <p className="special-p">Get my Resume</p>
                     <FontAwesomeIcon className="icon" icon={faExternalLinkAlt}/>
               </a>
