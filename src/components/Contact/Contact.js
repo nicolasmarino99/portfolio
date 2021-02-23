@@ -54,12 +54,12 @@ const Contact = () => {
                         </a>
                         </div>
                             <div className="network">
-                                <a href="https://stackoverflow.com/users/13809115/nicol%c3%a1s-mari%c3%b1o-parra"><FontAwesomeIcon className="icon" icon={faStackOverflow}/></a>
-                                <a href="https://github.com/nicolasmarino99"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
-                                <a href="https://twitter.com/nicolasmarino99"><FontAwesomeIcon className="icon" icon={faTwitter} /></a>
-                                <a href="https://www.linkedin.com/in/nicol%C3%A1s-mari%C3%B1o-parra-45a707177/"><FontAwesomeIcon className="icon" icon={faLinkedin} /></a>
-                                <a href="https://medium.com/@nicolasmarinoparra"><FontAwesomeIcon className="icon" icon={faMedium} /></a>
-                                <a href="https://angel.co/u/nicolas-marino-parra"><FontAwesomeIcon className="icon" icon={faAngellist} /></a>
+                                <a href="https://stackoverflow.com/users/13809115/nicol%c3%a1s-mari%c3%b1o-parra" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faStackOverflow}/></a>
+                                <a href="https://github.com/nicolasmarino99" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faGithub} /></a>
+                                <a href="https://twitter.com/nicolasmarino99" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faTwitter} /></a>
+                                <a href="https://www.linkedin.com/in/nicol%C3%A1s-mari%C3%B1o-parra-45a707177/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faLinkedin} /></a>
+                                <a href="https://medium.com/@nicolasmarinoparra" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faMedium} /></a>
+                                <a href="https://angel.co/u/nicolas-marino-parra" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon" icon={faAngellist} /></a>
                             </div>
                     </div>
         </div>
