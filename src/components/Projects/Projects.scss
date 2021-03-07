@@ -1,0 +1,74 @@
+.Projects {
+    background-color: rgb(27,27,30);
+    height: 142vh;;
+    padding-top: 10%;
+    @media (max-width: 600px) { 
+      padding-top: 29%;
+      height: 138vh;
+    }
+    .header {
+        display: flex;
+        padding-left: 12%;
+        .greeting-projects {
+            align-self: flex-end;
+            margin-bottom: 3.7%;
+            width: 17%;
+            @media (max-width: 600px) { 
+              margin-bottom: 9.7%;
+              width: 37%;
+            }
+        }
+
+    }
+    #h1-project {
+        padding-left: 20.5%;
+        position: relative;
+        top: -12%;
+        @media (max-width: 600px) { 
+          top: -13%;
+          left: -10%;
+        }
+    }
+    .carousel {
+      position: relative;
+      top: -13%;
+    }
+    .carousel-item {
+        height: 94vh;
+    }
+    main {
+        .container {
+          position: relative;
+          .row {
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .image-container {
+              position: relative;
+              .thumbnail {
+                overflow: hidden;
+                position: relative;
+                .frame {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+              .information {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                text-transform: uppercase;
+                .location {
+                  span:nth-child(2) {
+                    margin-left: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+}

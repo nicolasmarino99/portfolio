@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+$pink: rgb(233, 72, 139);
+$blue: rgb(89,222,255);
+$purple: #848AC4;
+$yellow: #FBC625;
+$nightblue :#1f0575;
+$hardpink: #c34b6c;
+$navblue:#160746;
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+$colors: (
+  
+  pulse: #ef6eae, 
+  
+);
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    font-weight: 100;
+  }
+  .number {
+    font-weight: 100;
+    font-size: 100px;
+    line-height: 150px;
+    color: rgba(255, 255, 255, 0.452);
+  }
+  input, textarea {
+    margin: 0.5em 0;
+    height: 2.5em;
+    background: #101010;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  button, #submit {
+    
+    background: #DB4747;
+    color: white;
+    border: none;
+    height: 2.5em;
+    border-radius: 5px;
+  
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em rgba(#fff,0);
+        border-color: var(--hover);
+        color: #fff;
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

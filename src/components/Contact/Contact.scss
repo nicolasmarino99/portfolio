@@ -1,0 +1,61 @@
+.Contact {
+    background: #212123;
+    
+    .contact-container {
+        margin: auto;
+        width: 55%;
+        @media (max-width: 600px) { 
+            width: 95%;
+        }
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 9%;
+            svg {
+                margin-top: 5%;
+            }
+            header {
+                display: flex;
+                align-items: flex-end;
+                .greeting-p {
+                    margin-bottom: 12.2%;
+                }
+            }
+        }
+        .contact-me {
+            margin: auto;
+            width: 54%;
+            @media (max-width: 600px) { 
+                width: 66%;
+            }
+            h1 {
+                font-size: 46px;
+                margin-bottom: 0.5em;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                #message {
+                    height: 8em; 
+                }
+            }
+            
+        }
+       
+    }
+    .network {
+        display: flex;
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        padding: 0 5%;
+        svg {margin-left: 1em;}
+        .resume {
+            display: flex;
+        }
+    }
+    
+}

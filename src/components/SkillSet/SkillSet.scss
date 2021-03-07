@@ -1,0 +1,77 @@
+.SkillSet {
+    background-color: rgb(27,27,30);
+    display: flex;
+    height: 118vh;
+    padding: 4%;
+    @media (max-width: 600px) {
+        height: 184vh;
+        flex-direction: column-reverse;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 10%;
+        @media (max-width: 600px) {
+            padding-left: 0;
+         }
+        .SkillCard {
+            -webkit-box-shadow: 0px 0px 13px 0px #00000098;
+            box-shadow: 0px 0px 13px 0px #00000098;
+            background: #212123;
+            width: 44%;
+            height: 45%;
+            margin: 3%;
+            @media (max-width: 600px) {
+                height: 47%;
+            }
+            li {
+                color: #7D7C84;
+                font-size: 13px;
+            }
+            h2 {
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                padding-left: 1em;
+            }
+            img {
+                padding: 1em;
+            }
+        }
+
+    }
+    .info-cv {
+        width: 47%;
+        margin-left: 3%;
+        padding-top: 5%;
+        #n3 {
+            height: 23%;
+            @media (max-width: 600px) { 
+                height: 31%;
+            }
+        }
+        h1 {
+            margin-bottom: 4%;
+            @media (max-width: 600px) {
+                font-size: 44px;
+                margin-bottom: 10%;
+            }
+        }
+        .presentaion-p {
+            width: 66%;
+            @media (max-width: 600px) { 
+                width: 195%;
+            }
+        }
+        .social {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            color: #DB4747;
+            .special-p {
+                margin-right: 1em;
+                font-weight: bold;
+            }
+        }
+    }
+}
