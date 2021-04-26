@@ -4,36 +4,36 @@ import bt from '../assets/body-tr/bt.jpg'
 import bt1 from '../assets/body-tr/bt1.jpg'
 import bt2 from '../assets/body-tr/bt2.jpg'
 import bt3 from '../assets/body-tr/bt3.jpg'
-import bt4 from '../assets/body-tr/bt4.jpg'
-import bt5 from '../assets/body-tr/bt5.jpg'
-
+//import bt4 from '../assets/body-tr/bt4.jpg'
+//import bt5 from '../assets/body-tr/bt5.jpg'
+//
 import FacebookClone from '../assets/facebook-clone/FacebookClone.jpg'
 import FacebookClone1 from '../assets/facebook-clone/FacebookClone1.png'
 import FacebookClone2 from '../assets/facebook-clone/FacebookClone2.jpg'
 import FacebookClone3 from '../assets/facebook-clone/FacebookClone3.jpg'
-import FacebookClone4 from '../assets/facebook-clone/FacebookClone4.png'
-import FacebookClone5 from '../assets/facebook-clone/FacebookClone5.png'
-
+//import FacebookClone4 from '../assets/facebook-clone/FacebookClone4.png'
+//import FacebookClone5 from '../assets/facebook-clone/FacebookClone5.png'
+//
 import pokedex from '../assets/pokedex/pokedex.jpg'
 import pokedex1 from '../assets/pokedex/pokedex1.jpg'
 import pokedex2 from '../assets/pokedex/pokedex2.jpg'
 import pokedex3 from '../assets/pokedex/pokedex3.jpg'
-import pokedex4 from '../assets/pokedex/pokedex4.jpg'
-import pokedex5 from '../assets/pokedex/pokedex5.jpg'
-
+//import pokedex4 from '../assets/pokedex/pokedex4.jpg'
+//import pokedex5 from '../assets/pokedex/pokedex5.jpg'
+//
 import PrivateEvents from '../assets/private-events/PrivateEvents.jpg'
 import PrivateEvents1 from '../assets/private-events/PrivateEvents1.jpg'
 import PrivateEvents2 from '../assets/private-events/PrivateEvents2.jpg'
 import PrivateEvents3 from '../assets/private-events/PrivateEvents3.jpg'
-import PrivateEvents4 from '../assets/private-events/PrivateEvents4.jpg'
-import PrivateEvents5 from '../assets/private-events/PrivateEvents5.jpg'
-
+//import PrivateEvents4 from '../assets/private-events/PrivateEvents4.jpg'
+//import PrivateEvents5 from '../assets/private-events/PrivateEvents5.jpg'
+//
 import SuperToDo from '../assets/trello-clone/SuperToDo.jpg'
 import SuperToDo1 from '../assets/trello-clone/SuperToDo1.jpg'
 import SuperToDo2 from '../assets/trello-clone/SuperToDo2.jpg'
 import SuperToDo3 from '../assets/trello-clone/SuperToDo3.jpg'
-import SuperToDo4 from '../assets/trello-clone/SuperToDo4.jpg'
-import SuperToDo5 from '../assets/trello-clone/SuperToDo5.jpg'
+//import SuperToDo4 from '../assets/trello-clone/SuperToDo4.jpg'
+//import SuperToDo5 from '../assets/trello-clone/SuperToDo5.jpg'
 
 const initialState = {
     Pokedex: {
@@ -44,8 +44,8 @@ const initialState = {
             pokedex1,
             pokedex2,
             pokedex3,
-            pokedex4,
-            pokedex5,
+            //pokedex4,
+            //pokedex5,
         ],
         specialImg: pokedex,
         technologies: [
@@ -69,8 +69,8 @@ const initialState = {
             FacebookClone1,
             FacebookClone2,
             FacebookClone3,
-            FacebookClone4,
-            FacebookClone5,
+            //FacebookClone4,
+            //FacebookClone5,
         ],
         specialImg: FacebookClone,
         technologies: [
@@ -93,8 +93,8 @@ const initialState = {
             bt1,
             bt2,
             bt3,
-            bt4,
-            bt5,
+            //bt4,
+            //bt5,
         ],
         specialImg: bt,
         technologies: [
@@ -121,8 +121,8 @@ const initialState = {
             SuperToDo1,
             SuperToDo2,
             SuperToDo3,
-            SuperToDo4,
-            SuperToDo5,
+            //SuperToDo4,
+            //SuperToDo5,
         ],
         specialImg: SuperToDo,
         technologies: [
@@ -142,8 +142,8 @@ const initialState = {
             PrivateEvents1,
             PrivateEvents2,
             PrivateEvents3,
-            PrivateEvents4,
-            PrivateEvents5,
+            //PrivateEvents4,
+            //PrivateEvents5,
         ],
         specialImg: PrivateEvents,
         technologies: [

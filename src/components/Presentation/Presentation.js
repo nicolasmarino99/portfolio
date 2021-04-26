@@ -50,7 +50,7 @@ const Presentation = () => {
                 Welcome to my website, I am a full-Stack developer who can help you build your product, implement a web-feature, or develop your website. Checkout and click over my projects! If you like my work, you can write me in the contact section or just contact me through my social media.
                 </p>
                 <div className="social fadeIn1">
-                    <p className="special-p">See my works</p>
+                    <p className="special-p">See my work</p>
                 <svg width="15%" height="78px">
                     <line x1="0" y1="39" x2="70" y2="39"/>
 

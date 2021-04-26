@@ -4,11 +4,13 @@ import "./Project.scss";
 import { motion } from "framer-motion";
 import { Carousel } from 'react-bootstrap';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tilt from 'react-vanilla-tilt'
 import { ProjectsContext } from "../ContextProviders/ProjectsProvider";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
+
 
 const Project = ({ imageDetails }) => {
   
@@ -23,7 +25,6 @@ const Project = ({ imageDetails }) => {
 
     let project = projects[id]
 
-    console.log(project)
 
     const [index, setIndex] = useState(0);
 
@@ -69,7 +70,11 @@ const Project = ({ imageDetails }) => {
           transition: { duration: 1, ...transition },
         },
       };
+
+
   return (
+    <>
+    <Link to="/">See live <FontAwesomeIcon className="icon" icon={faArrowLeft}/></Link>
     <motion.div initial='initial' animate='animate' exit='exit' className='single'>
       <div className='container fluid'>
         <div className='row center top-row'>
@@ -153,6 +158,7 @@ const Project = ({ imageDetails }) => {
         </div>
       </div>
     </motion.div>
+    </>
   );
 };
 
