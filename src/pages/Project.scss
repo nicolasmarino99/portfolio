@@ -9,6 +9,12 @@ $black:#1B1B1E;
     @media (max-width: 600px) { 
       height: 161vh;
     }
+    .back {
+      padding: 0 9%;
+      position: relative;
+      top: 1em;
+      font-size: 1.7em;
+    }
     .container {
       .row {
         .project-img {
@@ -136,9 +142,10 @@ $black:#1B1B1E;
           }
         }
         .scroll-for-more {
-            position: absolute;
-            top: 45%;
-            z-index: 20;
+          position: absolute;
+          top: 40%;
+          left: 2%;
+          z-index: 20;
           .icon {
             svg {
               height: auto;

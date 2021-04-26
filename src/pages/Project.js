@@ -74,8 +74,8 @@ const Project = ({ imageDetails }) => {
 
   return (
     <>
-    <Link to="/">See live <FontAwesomeIcon className="icon" icon={faArrowLeft}/></Link>
     <motion.div initial='initial' animate='animate' exit='exit' className='single'>
+      <div className="back"><Link to="/"><FontAwesomeIcon className="icon" icon={faArrowLeft}/></Link></div>
       <div className='container fluid'>
         <div className='row center top-row'>
           <div className='top'>
