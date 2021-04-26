@@ -15,12 +15,11 @@ const SkillSet = () => {
   // eslint-disable-next-line no-unused-vars
   const [skills, setSkills] = useState([
     ['Languages', languagesLogo, ['JavaScript (ES5/ES6)','Ruby','HTML','CSS3/SASS', 'Python']],
-    ['Frameworks', frameworksLogo, ['React', 'Ruby on Rails', 'Material', 'Jest', 'React-testing-lib.', 'Redux', 'Capibara', 'Rspec', 'Phaser3']],
+    ['Frameworks', frameworksLogo, ['React', 'Ruby on Rails', 'Mocha', 'Jest', 'Node/express.', 'Redux', 'Capibara', 'Rspec', 'Phaser3']],
     ['Skills', skillsLogo, ['Pair Programing', 'TDD', 'git', 'github', 'Heroku', ' Netlify', 'gitlab']],
     ['Soft skills', softskillsLogo, ['Communication', 'Problem-solving', 'Patience', 'Adaptability']],
   ])
 
-  
 
   const SkillCard = ({item}) => (
       <div className="SkillCard">
